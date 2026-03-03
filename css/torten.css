@@ -48,6 +48,26 @@
   line-height: var(--leading-relaxed);
 }
 
+/* ── Detail descriptions ──────────────────────────────────────── */
+.torten-detail {
+  padding: var(--sp-8) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.torten-detail:last-child { border-bottom: none; }
+.torten-detail h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--clr-walnut);
+  margin-bottom: var(--sp-4);
+}
+.torten-detail p {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  max-width: 680px;
+}
+
 .torten-cta {
   text-align: center;
   padding: var(--sp-10) var(--sp-6);
