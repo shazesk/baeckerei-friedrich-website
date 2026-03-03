@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unsere Produkte — Über 30 Brotsorten, frische Brötchen, Feingebäck, Snacks und Sahneschnitten. Bäckerei Friedrich im Odenwald.">
+  <title>Produkte — Bäckerei Friedrich</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/produkte.css">
+</head>
+<body>
+
+  <!-- ══════════ SHARED HEADER ══════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo.svg" alt="Friedrich Bäckerei · Konditorei"></a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></button>
+      <nav class="nav" id="nav" aria-label="Hauptnavigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Startseite</a></li>
+          <li><a href="produkte.html" class="nav__link nav__link--active">Produkte</a></li>
+          <li><a href="torten.html" class="nav__link">Torten</a></li>
+          <li><a href="eis-lisel.html" class="nav__link">Eis Lisel</a></li>
+          <li><a href="ueber-uns.html" class="nav__link">Über uns</a></li>
+          <li><a href="jobs.html" class="nav__link">Jobs</a></li>
+          <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+        </ul>
+        <a href="filialen.html" class="nav__cta">Filialen &amp; Öffnungszeiten</a>
+      </nav>
+    </div>
+  </header>
+  <!-- ══════════ END HEADER ══════════ -->
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__bg" style="background-image:url('images/hero/produkte-hero.jpg')"></div>
+      <div class="container">
+        <p class="page-hero__kicker">Unsere Produkte</p>
+        <h1 class="page-hero__title">Frisch aus der Backstube</h1>
+        <p class="page-hero__desc">Nehmen Sie sich einen Moment Zeit und stöbern Sie in unseren Produkten, um etwas für Ihren individuellen Geschmack zu finden.</p>
+      </div>
+    </section>
+
+    <!-- ── Brot ───────────────────────────────────────────────── -->
+    <section id="brot" class="product-section section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__kicker">Täglich frisch</p>
+          <h2 class="section-header__title">Brot &amp; Brötchen</h2>
+          <p class="section-header__desc">Deutschland ist Brotland. Purer Genuss &amp; eine Faszination, die im Handwerk ihresgleichen sucht.</p>
+        </div>
+        <div class="grid grid--4 reveal-stagger">
+          <div class="product-tile reveal">
+            <img src="images/products/brot-1.jpg" alt="Pfefferbaguette" class="product-tile__img">
+            <div class="product-tile__body">
+              <span class="product-tile__badge">Kundenliebling</span>
+              <h3 class="product-tile__name">Pfefferbaguette</h3>
+              <p class="product-tile__desc">Unser Kundenliebling — knuspriges Baguette mit würzigem Pfeffer.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/brot-2.jpg" alt="Piratenkruste" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Piratenkruste</h3>
+              <p class="product-tile__desc">Lecker mit Karottenstückchen — rustikale Kruste und saftiges Inneres.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/brot-3.jpg" alt="Dinkel-Eiweißbrot" class="product-tile__img">
+            <div class="product-tile__body">
+              <span class="product-tile__badge">Neu</span>
+              <h3 class="product-tile__name">Dinkel-Eiweißbrot</h3>
+              <p class="product-tile__desc">Leicht und proteinreich — aus feinstem Dinkelmehl.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/brot-4.jpg" alt="Unser Körniges" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Unser Körniges</h3>
+              <p class="product-tile__desc">Mit ganzen Körnern, ohne Mehl — sehr lange haltbar.</p>
+            </div>
+          </div>
+        </div>
+        <p class="product-section__note reveal">Über 30 weitere Brotsorten täglich wechselnd in unseren Filialen erhältlich.</p>
+      </div>
+    </section>
+
+    <!-- ── Brötchen ───────────────────────────────────────────── -->
+    <section id="broetchen" class="product-section section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__kicker">Frühstücksvielfalt</p>
+          <h2 class="section-header__title">Brötchen</h2>
+          <p class="section-header__desc">Aromatische Vielfalt &amp; tägliche Frische auf dem Frühstückstisch.</p>
+        </div>
+        <div class="grid grid--4 reveal-stagger">
+          <div class="product-tile reveal">
+            <img src="images/products/broetchen-1.jpg" alt="Kürbis-Traum" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Kürbis-Traum</h3>
+              <p class="product-tile__desc">Mit steirischen Kürbiskernen — unser Traum-Brötchen.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/broetchen-2.jpg" alt="Emmerle" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Emmerle</h3>
+              <p class="product-tile__desc">Mit Emmer, Einkorn und Dinkel — aus Urgetreide gebacken.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/broetchen-3.jpg" alt="Laugenbrezel" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Laugenbrezel</h3>
+              <p class="product-tile__desc">Jede einzelne Brezel wird von Hand geflochten.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/broetchen-4.jpg" alt="Kornspitz" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Kornspitz</h3>
+              <p class="product-tile__desc">Knusprig, kernig und vollmundig — ideal zum Frühstück.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Feingebäck & Kuchen ────────────────────────────────── -->
+    <section id="feingebaeck" class="product-section section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__kicker">Süße Verführung</p>
+          <h2 class="section-header__title">Feingebäck &amp; Kuchen</h2>
+          <p class="section-header__desc">Gebäck und Kuchen — bei denen das Auge mitisst.</p>
+        </div>
+        <div class="grid grid--4 reveal-stagger">
+          <div class="product-tile reveal">
+            <img src="images/products/feingebaeck-1.jpg" alt="Pfirsich-Joghurt-Taler" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Pfirsich-Joghurt-Taler</h3>
+              <p class="product-tile__desc">Fruchtig und frisch — feines Gebäck mit Pfirsich und cremigem Joghurt.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/feingebaeck-2.jpg" alt="Buttercroissant" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Buttercroissant</h3>
+              <p class="product-tile__desc">Butterig, blättrig und goldbraun gebacken.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/feingebaeck-3.jpg" alt="Mohnschnecke" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Mohnschnecke</h3>
+              <p class="product-tile__desc">Klassisch gefüllte Mohnschnecke — saftig und aromatisch.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/feingebaeck-4.jpg" alt="Schoko Muffin" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Schoko Muffin</h3>
+              <p class="product-tile__desc">Schokoladig und locker — ein Genuss zu jeder Tageszeit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Snacks ─────────────────────────────────────────────── -->
+    <section id="snacks" class="product-section section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__kicker">Herzhaft</p>
+          <h2 class="section-header__title">Snacks</h2>
+          <p class="section-header__desc">Köstliche Mini-Mahlzeiten mit Satt-mach-Faktor.</p>
+        </div>
+        <div class="grid grid--3 reveal-stagger">
+          <div class="product-tile reveal">
+            <img src="images/products/snacks-1.jpg" alt="Pizzafleischkäse-Brötchen" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Pizzafleischkäse-Brötchen</h3>
+              <p class="product-tile__desc">Herzhaft gefüllt — der perfekte Snack für unterwegs.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/snacks-2.jpg" alt="Laugenwurststange" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Laugenwurststange</h3>
+              <p class="product-tile__desc">Knusprige Laugengebäck-Stange mit würziger Füllung.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/snacks-3.jpg" alt="Friedrich-Burger" class="product-tile__img">
+            <div class="product-tile__body">
+              <span class="product-tile__badge">Hausspezialität</span>
+              <h3 class="product-tile__name">Friedrich-Burger</h3>
+              <p class="product-tile__desc">Unser Haus-Burger — frisch zubereitet mit hausgemachtem Brötchen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Sahneschnitten ─────────────────────────────────────── -->
+    <section id="sahne" class="product-section section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__kicker">Konditoreikunst</p>
+          <h2 class="section-header__title">Sahneschnitten &amp; Sahnetorten</h2>
+          <p class="section-header__desc">Unwiderstehliche Köstlichkeiten nach alter Konditoreikunst.</p>
+        </div>
+        <div class="grid grid--4 reveal-stagger">
+          <div class="product-tile reveal">
+            <img src="images/products/sahneschnitten-1.jpg" alt="Schwarzwälderkirsch-Schnitte" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Schwarzwälderkirsch</h3>
+              <p class="product-tile__desc">Der zeitlose Klassiker — Schokolade, Kirschen und Sahne.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/sahneschnitten-2.jpg" alt="Frankfurter Kranz" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Frankfurter Kranz</h3>
+              <p class="product-tile__desc">Der hessische Klassiker — Buttercreme, Krokant und ein Hauch Kirsch.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/sahneschnitten-3.jpg" alt="Holunder-Joghurt-Sahneschnitte" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Holunder-Joghurt</h3>
+              <p class="product-tile__desc">Fruchtig-frisch mit Holunderblüte und cremigem Joghurt.</p>
+            </div>
+          </div>
+          <div class="product-tile reveal">
+            <img src="images/products/sahneschnitten-4.jpg" alt="Latte Macchiato Sahneschnitte" class="product-tile__img">
+            <div class="product-tile__body">
+              <h3 class="product-tile__name">Latte Macchiato</h3>
+              <p class="product-tile__desc">Kaffee trifft Sahne — für alle Latte-Macchiato-Liebhaber.</p>
+            </div>
+          </div>
+        </div>
+        <p class="product-section__note reveal">Individuelle Torten für jeden Anlass — mehr dazu auf unserer <a href="torten.html">Torten-Seite</a>.</p>
+      </div>
+    </section>
+
+    <!-- ── Eis Lisel Teaser ───────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="feature-card eis-teaser reveal">
+          <div class="feature-card__img-wrap">
+            <img src="images/home-eis.jpg" alt="Eis Lisel" class="feature-card__img">
+          </div>
+          <div class="feature-card__body eis-teaser__body">
+            <img src="images/eis-lisel/eislisel-logo.svg" alt="Eis Lisel" class="eis-teaser__logo">
+            <h2 class="feature-card__title eis-teaser__title">Eis Lisel — Handgemachtes Eis</h2>
+            <p class="feature-card__text">Unsere Eis-Marke bringt handgemachtes Eis direkt zu Ihrem Event! Eis-Station zum Selbstportionieren — kein Catering, kein Personal nötig.</p>
+            <a href="eis-lisel.html" class="btn btn--primary">Eis Lisel entdecken</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ SHARED FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="images/logo.svg" alt="Friedrich Bäckerei · Konditorei">
+          <p>Familienunternehmen seit ca. 150 Jahren im Odenwald. Handgefertigte, traditionell hergestellte Produkte aus eigener Herstellung.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Seiten</h3>
+          <div class="footer__links">
+            <a href="produkte.html">Produkte</a>
+            <a href="torten.html">Torten</a>
+            <a href="eis-lisel.html">Eis Lisel</a>
+            <a href="ueber-uns.html">Über uns</a>
+            <a href="jobs.html">Jobs</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Besuchen</h3>
+          <div class="footer__links">
+            <a href="filialen.html">Filialen &amp; Öffnungszeiten</a>
+            <a href="kontakt.html">Kontakt</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Kontakt</h3>
+          <div class="footer__links">
+            <a href="tel:+496161912106">06161 / 912106</a>
+            <a href="mailto:mail@baeckereifriedrich.de">mail@baeckereifriedrich.de</a>
+            <span>Waldstr. 21, 64395 Brensbach</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Bäckerei Friedrich GmbH. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- ══════════ END FOOTER ══════════ -->
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

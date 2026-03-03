@@ -1,0 +1,409 @@
+/* ==========================================================================
+   EIS LISEL PAGE — Premium Glassmorphism Sub-Brand
+   ========================================================================== */
+
+/* ── Glassmorphism tokens ───────────────────────────────────── */
+.eis-lisel-page {
+  --glass-bg: rgba(255, 255, 255, 0.10);
+  --glass-bg-strong: rgba(255, 255, 255, 0.50);
+  --glass-bg-card: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.22);
+  --glass-border-card: rgba(255, 255, 255, 0.30);
+  --glass-blur: 16px;
+  --glass-blur-strong: 24px;
+  --glass-shadow: 0 8px 32px rgba(196, 84, 122, 0.08);
+  --glass-shadow-lg: 0 16px 48px rgba(196, 84, 122, 0.14);
+  --eis-rose-dark: #A33D60;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   HERO — Immersive gradient with frosted glass panel
+   ══════════════════════════════════════════════════════════════════ */
+.eis-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  color: var(--clr-white);
+  overflow: hidden;
+  background:
+    url('../images/eis-lisel/ice-cream-scoops.jpg') center/cover no-repeat;
+}
+.eis-hero::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(
+    160deg,
+    rgba(196, 84, 122, 0.88) 0%,
+    rgba(163, 61, 96, 0.80) 40%,
+    rgba(106, 175, 160, 0.75) 100%
+  );
+}
+
+/* Floating orbs for depth */
+.eis-hero__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  z-index: 1;
+  animation: orbFloat 10s ease-in-out infinite alternate;
+}
+.eis-hero__orb--1 {
+  width: 50vw; height: 50vw; max-width: 600px; max-height: 600px;
+  background: var(--eis-rose-light);
+  top: -15%; left: -10%;
+}
+.eis-hero__orb--2 {
+  width: 40vw; height: 40vw; max-width: 500px; max-height: 500px;
+  background: var(--eis-mint-light);
+  bottom: -20%; right: -5%;
+  animation-delay: -5s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes orbFloat {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(3vw, -2vw) scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eis-hero__orb { animation: none; }
+}
+
+.eis-hero__content {
+  position: relative; z-index: 2;
+  max-width: 700px;
+  padding: var(--sp-10) var(--sp-8);
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur-strong));
+  -webkit-backdrop-filter: blur(var(--glass-blur-strong));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--glass-shadow-lg);
+}
+
+.eis-hero__logo {
+  height: 100px;
+  margin: 0 auto var(--sp-6);
+  filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,0.2));
+}
+.eis-hero__title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: var(--clr-white);
+  margin-bottom: var(--sp-4);
+  text-shadow: 0 2px 16px rgba(0,0,0,0.15);
+}
+.eis-hero__subtitle {
+  font-size: var(--text-lg);
+  color: rgba(255,255,255,0.92);
+  margin-bottom: var(--sp-3);
+  max-width: 520px;
+  margin-left: auto; margin-right: auto;
+  line-height: var(--leading-relaxed);
+}
+.eis-hero__note {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.65);
+  margin-bottom: var(--sp-8);
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  .eis-hero__title { font-size: var(--text-5xl); }
+  .eis-hero__content { padding: var(--sp-16) var(--sp-16); }
+  .eis-hero__logo { height: 110px; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SERVICE CARDS — Glass panels with images
+   ══════════════════════════════════════════════════════════════════ */
+.eis-concept {
+  padding: var(--sp-20) 0;
+  background: linear-gradient(180deg, var(--eis-blush) 0%, var(--eis-cream) 100%);
+}
+.eis-concept__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+}
+@media (min-width: 768px) {
+  .eis-concept__grid { grid-template-columns: 1fr 1fr; }
+}
+
+.eis-service-card {
+  background: var(--glass-bg-card);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-card);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--glass-shadow);
+  transition: transform var(--duration-base) var(--ease-out),
+              box-shadow var(--duration-base) var(--ease-out);
+}
+.eis-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--glass-shadow-lg);
+}
+.eis-service-card__img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+.eis-service-card__body {
+  padding: var(--sp-8);
+  text-align: center;
+}
+.eis-service-card__icon {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--sp-4);
+  filter: drop-shadow(0 2px 6px rgba(196,84,122,0.2));
+}
+.eis-service-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--eis-rose);
+  margin-bottom: var(--sp-3);
+}
+.eis-service-card__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  max-width: none;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   FLAVOR CHIPS — Frosted glass pills with images
+   ══════════════════════════════════════════════════════════════════ */
+.eis-flavors {
+  padding: var(--sp-20) 0;
+  background: linear-gradient(180deg, var(--eis-cream) 0%, var(--eis-blush) 100%);
+  position: relative;
+}
+
+.flavor-chip {
+  display: flex; align-items: center; gap: var(--sp-4);
+  background: var(--glass-bg-card);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-card);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-4) var(--sp-6);
+  box-shadow: var(--glass-shadow);
+  transition: transform var(--duration-base) var(--ease-out),
+              box-shadow var(--duration-base) var(--ease-out);
+}
+.flavor-chip:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: var(--glass-shadow-lg);
+}
+.flavor-chip__dot {
+  width: 44px; height: 44px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+  box-shadow: inset 0 -3px 6px rgba(0,0,0,0.15), 0 2px 8px rgba(0,0,0,0.12);
+}
+.flavor-chip__name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--clr-walnut);
+}
+.flavor-chip__desc {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   IMAGE GALLERY — Full-width visual break
+   ══════════════════════════════════════════════════════════════════ */
+.eis-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+.eis-gallery__img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--duration-base) var(--ease-out),
+              filter var(--duration-base) var(--ease-out);
+}
+.eis-gallery__img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.08);
+}
+@media (max-width: 639px) {
+  .eis-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   EVENT CARDS — Glass event tiles with images
+   ══════════════════════════════════════════════════════════════════ */
+.eis-events {
+  padding: var(--sp-20) 0;
+  background: linear-gradient(180deg, var(--eis-blush) 0%, var(--eis-cream) 100%);
+}
+
+.eis-lisel-page .event-card {
+  background: var(--glass-bg-card);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--glass-shadow);
+  overflow: hidden;
+  padding: 0;
+  transition: transform var(--duration-base) var(--ease-out),
+              box-shadow var(--duration-base) var(--ease-out);
+}
+.eis-lisel-page .event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--glass-shadow-lg);
+}
+.eis-lisel-page .event-card__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease-out);
+}
+.eis-lisel-page .event-card:hover .event-card__img {
+  transform: scale(1.04);
+}
+.eis-lisel-page .event-card__body {
+  padding: var(--sp-5) var(--sp-6) var(--sp-6);
+}
+.eis-lisel-page .event-card__date {
+  font-size: var(--text-2xl);
+  display: block;
+  margin-bottom: var(--sp-2);
+}
+.eis-lisel-page .event-card__title {
+  color: var(--eis-rose);
+}
+.eis-lisel-page .event-card__location {
+  margin-bottom: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   FAQ — Frosted glass container
+   ══════════════════════════════════════════════════════════════════ */
+.eis-faq {
+  padding: var(--sp-20) 0;
+  background: linear-gradient(180deg, var(--eis-cream) 0%, var(--eis-blush) 100%);
+}
+
+.eis-faq .container--narrow {
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(var(--glass-blur-strong));
+  -webkit-backdrop-filter: blur(var(--glass-blur-strong));
+  border: 1px solid var(--glass-border-card);
+  border-radius: var(--radius-2xl);
+  padding: var(--sp-10) var(--sp-8);
+  box-shadow: var(--glass-shadow);
+}
+@media (min-width: 768px) {
+  .eis-faq .container--narrow { padding: var(--sp-16) var(--sp-16); }
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(196, 84, 122, 0.10);
+  padding: var(--sp-6) 0;
+}
+.faq-item:first-child { border-top: 1px solid rgba(196, 84, 122, 0.10); }
+
+.faq-item__q {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--clr-walnut);
+  margin-bottom: var(--sp-2);
+  cursor: default;
+}
+.faq-item__a {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  max-width: 600px;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   INQUIRY FORM — Glass form panel
+   ══════════════════════════════════════════════════════════════════ */
+.eis-inquiry {
+  padding: var(--sp-20) 0;
+  background: linear-gradient(180deg, var(--eis-blush) 0%, var(--eis-cream) 100%);
+}
+.eis-inquiry__form {
+  max-width: 580px;
+  margin: 0 auto;
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(var(--glass-blur-strong));
+  -webkit-backdrop-filter: blur(var(--glass-blur-strong));
+  border: 1px solid var(--glass-border-card);
+  padding: var(--sp-10) var(--sp-8);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--glass-shadow-lg);
+}
+@media (min-width: 768px) {
+  .eis-inquiry__form { padding: var(--sp-12) var(--sp-12); }
+}
+
+/* Glass-style inputs */
+.eis-lisel-page .form-group input,
+.eis-lisel-page .form-group textarea,
+.eis-lisel-page .form-group select {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(196, 84, 122, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: var(--radius-lg);
+}
+.eis-lisel-page .form-group input:focus,
+.eis-lisel-page .form-group textarea:focus,
+.eis-lisel-page .form-group select:focus {
+  border-color: var(--eis-rose);
+  box-shadow: 0 0 0 3px rgba(196, 84, 122, 0.12);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* ── Button overrides ─────────────────────────────────────────── */
+.eis-lisel-page .btn--primary {
+  background: var(--eis-rose);
+  border-color: var(--eis-rose);
+  box-shadow: 0 4px 16px rgba(196, 84, 122, 0.25);
+}
+.eis-lisel-page .btn--primary:hover {
+  background: var(--eis-rose-dark);
+  border-color: var(--eis-rose-dark);
+  box-shadow: 0 6px 24px rgba(196, 84, 122, 0.35);
+}
+.eis-lisel-page .btn--white {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--clr-white);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.eis-lisel-page .btn--white:hover {
+  background: rgba(255, 255, 255, 0.30);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: var(--clr-white);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+
+/* ── Kicker override ──────────────────────────────────────────── */
+.eis-lisel-page .section-header__kicker { color: var(--eis-rose); }
+
+/* ── Footer override for Eis Lisel page ───────────────────────── */
+.eis-lisel-page .footer {
+  background: #3D1A2A;
+}

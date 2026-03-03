@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eis Lisel — Handgemachtes Eis von Bäckerei Friedrich. Eis-Stationen zum Selbstportionieren für Events, Hochzeiten, Firmenfeiern und Geburtstage. Kein Catering nötig.">
+  <title>Eis Lisel — Handgemachtes Eis | Bäckerei Friedrich</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/eis-lisel.css">
+</head>
+<body class="eis-lisel-page">
+
+  <!-- ══════════ SHARED HEADER ══════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo.svg" alt="Friedrich Bäckerei · Konditorei"></a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></button>
+      <nav class="nav" id="nav" aria-label="Hauptnavigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Startseite</a></li>
+          <li><a href="produkte.html" class="nav__link">Produkte</a></li>
+          <li><a href="torten.html" class="nav__link">Torten</a></li>
+          <li><a href="eis-lisel.html" class="nav__link nav__link--active">Eis Lisel</a></li>
+          <li><a href="ueber-uns.html" class="nav__link">Über uns</a></li>
+          <li><a href="jobs.html" class="nav__link">Jobs</a></li>
+          <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+        </ul>
+        <a href="filialen.html" class="nav__cta">Filialen &amp; Öffnungszeiten</a>
+      </nav>
+    </div>
+  </header>
+  <!-- ══════════ END HEADER ══════════ -->
+
+  <main>
+
+    <!-- Hero -->
+    <section class="eis-hero">
+      <div class="eis-hero__orb eis-hero__orb--1"></div>
+      <div class="eis-hero__orb eis-hero__orb--2"></div>
+      <div class="eis-hero__content">
+        <img src="images/eis-lisel/eislisel-logo.svg" alt="Eis Lisel" class="eis-hero__logo">
+        <h1 class="eis-hero__title">Eis Lisel</h1>
+        <p class="eis-hero__subtitle">Handgemachtes Eis aus besten Zutaten — zum Selbstportionieren auf Ihrem Event.</p>
+        <p class="eis-hero__note">Kein Catering. Kein Personal nötig. Einfach aufstellen und genießen.</p>
+        <a href="#anfrage" class="btn btn--white btn--lg">Event-Anfrage stellen</a>
+      </div>
+    </section>
+
+    <!-- Concept / Services -->
+    <section class="eis-concept">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="section-header__kicker">So funktioniert's</p>
+          <h2 class="section-header__title">Eis für Ihr Event</h2>
+          <p class="section-header__desc">Wir liefern handgemachtes Eis direkt zu Ihrem Event. Ihre Gäste portionieren selbst — unkompliziert und ohne Aufwand für Sie.</p>
+        </div>
+        <div class="eis-concept__grid reveal-stagger">
+          <div class="eis-service-card reveal">
+            <img src="images/eis-lisel/ice-cream-station.jpg" alt="Eis-Station" class="eis-service-card__img">
+            <div class="eis-service-card__body">
+              <div class="eis-service-card__icon">🍨</div>
+              <h3 class="eis-service-card__title">Eis-Station zum Selbstportionieren</h3>
+              <p class="eis-service-card__text">Unsere mobile Eis-Station mit verschiedenen Sorten, Waffeln und Toppings. Ihre Gäste bedienen sich selbst — für ein lockeres, genussvolles Erlebnis. Kein Servicepersonal erforderlich.</p>
+            </div>
+          </div>
+          <div class="eis-service-card reveal">
+            <img src="images/eis-lisel/ice-cream-bowls.jpg" alt="Vorportioniertes Eis" class="eis-service-card__img">
+            <div class="eis-service-card__body">
+              <div class="eis-service-card__icon">📦</div>
+              <h3 class="eis-service-card__title">Vorportioniertes Eis</h3>
+              <p class="eis-service-card__text">Fertig portionierte Eisbecher oder Eis am Stiel — perfekt für größere Events. Einfach austeilen und genießen. Ideal für Kindergeburtstage und Sommerfeste.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flavors -->
+    <section class="eis-flavors">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="section-header__kicker">Unsere Sorten</p>
+          <h2 class="section-header__title">Handgemachte Eissorten</h2>
+          <p class="section-header__desc">Aus echten Zutaten, ohne künstliche Aromen. Saisonale Sorten und weitere Geschmacksrichtungen auf Anfrage.</p>
+        </div>
+        <div class="grid grid--3 reveal-stagger" style="gap: var(--sp-4);">
+          <div class="flavor-chip reveal">
+            <div class="flavor-chip__dot" style="background: #F5D76E;"></div>
+            <div><div class="flavor-chip__name">Vanille</div><div class="flavor-chip__desc">Cremige Bourbon-Vanille</div></div>
+          </div>
+          <div class="flavor-chip reveal">
+            <div class="flavor-chip__dot" style="background: #6B3A2A;"></div>
+            <div><div class="flavor-chip__name">Schokolade</div><div class="flavor-chip__desc">Intensive belgische Schokolade</div></div>
+          </div>
+          <div class="flavor-chip reveal">
+            <div class="flavor-chip__dot" style="background: #FF6B6B;"></div>
+            <div><div class="flavor-chip__name">Erdbeere</div><div class="flavor-chip__desc">Frische Erdbeeren aus der Region</div></div>
+          </div>
+          <div class="flavor-chip reveal">
+            <div class="flavor-chip__dot" style="background: #7CB342;"></div>
+            <div><div class="flavor-chip__name">Pistazie</div><div class="flavor-chip__desc">Edle sizilianische Pistazien</div></div>
+          </div>
+          <div class="flavor-chip reveal">
+            <div class="flavor-chip__dot" style="background: #FFA726;"></div>
+            <div><div class="flavor-chip__name">Mango</div><div class="flavor-chip__desc">Exotisch und sonnig frisch</div></div>
+          </div>
+          <div class="flavor-chip reveal">
+            <div class="flavor-chip__dot" style="background: #5C6BC0;"></div>
+            <div><div class="flavor-chip__name">Heidelbeere</div><div class="flavor-chip__desc">Wilde Heidelbeeren, intensiv fruchtig</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <div class="eis-gallery">
+      <img src="images/eis-lisel/ice-cream-sundae.jpg" alt="Eis Lisel" class="eis-gallery__img">
+      <img src="images/eis-lisel/ice-cream-cone.jpg" alt="Eis Lisel" class="eis-gallery__img">
+      <img src="images/eis-lisel/ice-cream-waffle.jpg" alt="Eis Lisel" class="eis-gallery__img">
+      <img src="images/eis-lisel/ice-cream-gelato.jpg" alt="Eis Lisel" class="eis-gallery__img">
+    </div>
+
+    <!-- Eis Events -->
+    <section class="eis-events">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="section-header__kicker">Eis Events</p>
+          <h2 class="section-header__title">Perfekt für Ihre Veranstaltung</h2>
+          <p class="section-header__desc">Ob Hochzeit, Firmenevent oder Kindergeburtstag — unsere Eis-Station ist das süße Highlight.</p>
+        </div>
+        <div class="grid grid--3 reveal-stagger">
+          <div class="event-card reveal">
+            <img src="images/eis-lisel/ice-cream-sundae.jpg" alt="Hochzeitseis" class="event-card__img">
+            <div class="event-card__body">
+              <span class="event-card__date">💒</span>
+              <h3 class="event-card__title">Hochzeiten</h3>
+              <p class="event-card__location">Ein süßes Highlight für Ihren schönsten Tag — Eis als Dessert oder Mitternachtssnack.</p>
+            </div>
+          </div>
+          <div class="event-card reveal">
+            <img src="images/eis-lisel/ice-cream-gelato.jpg" alt="Firmeneis" class="event-card__img">
+            <div class="event-card__body">
+              <span class="event-card__date">🏢</span>
+              <h3 class="event-card__title">Firmenevents</h3>
+              <p class="event-card__location">Teamevents, Sommerfeste oder Kundentage — frisches Eis für Ihre Mitarbeiter und Gäste.</p>
+            </div>
+          </div>
+          <div class="event-card reveal">
+            <img src="images/eis-lisel/ice-cream-cone.jpg" alt="Geburtstagseis" class="event-card__img">
+            <div class="event-card__body">
+              <span class="event-card__date">🎂</span>
+              <h3 class="event-card__title">Geburtstage</h3>
+              <p class="event-card__location">Kindergeburtstag oder runder Geburtstag — Eis macht jede Feier unvergesslich.</p>
+            </div>
+          </div>
+          <div class="event-card reveal">
+            <img src="images/eis-lisel/ice-cream-party.jpg" alt="Sommerfest Eis" class="event-card__img">
+            <div class="event-card__body">
+              <span class="event-card__date">☀️</span>
+              <h3 class="event-card__title">Sommerfeste</h3>
+              <p class="event-card__location">Straßenfeste, Vereinsfeiern oder Gartenfeste — die perfekte Erfrischung.</p>
+            </div>
+          </div>
+          <div class="event-card reveal">
+            <img src="images/eis-lisel/ice-cream-waffle.jpg" alt="Familieneis" class="event-card__img">
+            <div class="event-card__body">
+              <span class="event-card__date">👨‍👩‍👧‍👦</span>
+              <h3 class="event-card__title">Familienfeiern</h3>
+              <p class="event-card__location">Taufe, Kommunion oder Familientreffen — Eis, das Klein und Groß begeistert.</p>
+            </div>
+          </div>
+          <div class="event-card reveal">
+            <img src="images/eis-lisel/ice-cream-scoops.jpg" alt="Winter Edition Eis" class="event-card__img">
+            <div class="event-card__body">
+              <span class="event-card__date">🎄</span>
+              <h3 class="event-card__title">Winter Edition</h3>
+              <p class="event-card__location">Saisonale Eissorten wie Zimt, Bratapfel oder Spekulatius.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="eis-faq">
+      <div class="container container--narrow">
+        <div class="section-header section-header--center reveal">
+          <p class="section-header__kicker">Häufige Fragen</p>
+          <h2 class="section-header__title">FAQ</h2>
+        </div>
+        <div class="reveal">
+          <div class="faq-item">
+            <h3 class="faq-item__q">Ist das ein Catering-Service?</h3>
+            <p class="faq-item__a">Nein. Wir liefern die Eis-Station fertig bestückt zu Ihrem Veranstaltungsort. Ihre Gäste portionieren sich das Eis selbst. Es ist kein Servicepersonal von uns vor Ort — Sie brauchen auch keins.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__q">Wo kann die Station aufgestellt werden?</h3>
+            <p class="faq-item__a">Die Station benötigt ein schattiges Plätzchen und ist sowohl indoor als auch outdoor nutzbar. Wir beraten Sie gerne zur optimalen Platzierung.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__q">Wie viele Gäste können bedient werden?</h3>
+            <p class="faq-item__a">Wir passen die Eismenge an Ihre Gästezahl an. Von 20 bis 500+ Gäste — teilen Sie uns Ihre Vorstellung mit und wir erstellen ein passendes Angebot.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__q">Wie weit im Voraus muss ich buchen?</h3>
+            <p class="faq-item__a">Wir empfehlen eine Anfrage mindestens 2–4 Wochen vor dem Event. In der Hochsaison (Mai–September) gerne früher.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-item__q">Kann ich die Sorten selbst auswählen?</h3>
+            <p class="faq-item__a">Ja! Sie können aus unserem Sortiment Ihre Lieblingssorten wählen. Saisonale Sondersorten sind ebenfalls möglich.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section id="anfrage" class="eis-inquiry">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="section-header__kicker">Jetzt anfragen</p>
+          <h2 class="section-header__title">Eis-Event anfragen</h2>
+          <p class="section-header__desc">Erzählen Sie uns von Ihrem Event — wir melden uns mit einem individuellen Angebot.</p>
+        </div>
+        <form class="eis-inquiry__form reveal" id="eis-form">
+          <div class="form-group">
+            <label for="eis-name">Name *</label>
+            <input type="text" id="eis-name" name="name" required>
+            <span class="error-msg">Bitte geben Sie Ihren Namen ein.</span>
+          </div>
+          <div class="form-group">
+            <label for="eis-email">E-Mail *</label>
+            <input type="email" id="eis-email" name="email" required>
+            <span class="error-msg">Bitte geben Sie eine gültige E-Mail-Adresse ein.</span>
+          </div>
+          <div class="form-group">
+            <label for="eis-event">Art der Veranstaltung</label>
+            <select id="eis-event" name="event">
+              <option value="">Bitte wählen...</option>
+              <option value="Hochzeit">Hochzeit</option>
+              <option value="Firmenevent">Firmenevent</option>
+              <option value="Geburtstag">Geburtstag</option>
+              <option value="Sommerfest">Sommerfest</option>
+              <option value="Familienfeier">Familienfeier</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="eis-date">Gewünschtes Datum</label>
+            <input type="date" id="eis-date" name="date">
+          </div>
+          <div class="form-group">
+            <label for="eis-guests">Anzahl Gäste (ca.)</label>
+            <input type="number" id="eis-guests" name="guests" min="1" placeholder="z.B. 50">
+          </div>
+          <div class="form-group">
+            <label for="eis-message">Nachricht</label>
+            <textarea id="eis-message" name="message" placeholder="Erzählen Sie uns mehr über Ihr Event..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Anfrage senden</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ SHARED FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="images/logo.svg" alt="Friedrich Bäckerei · Konditorei">
+          <p>Familienunternehmen seit ca. 150 Jahren im Odenwald. Handgefertigte, traditionell hergestellte Produkte aus eigener Herstellung.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Seiten</h3>
+          <div class="footer__links"><a href="produkte.html">Produkte</a><a href="torten.html">Torten</a><a href="eis-lisel.html">Eis Lisel</a><a href="ueber-uns.html">Über uns</a><a href="jobs.html">Jobs</a></div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Besuchen</h3>
+          <div class="footer__links"><a href="filialen.html">Filialen &amp; Öffnungszeiten</a><a href="kontakt.html">Kontakt</a></div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Kontakt</h3>
+          <div class="footer__links"><a href="tel:+496161912106">06161 / 912106</a><a href="mailto:mail@baeckereifriedrich.de">mail@baeckereifriedrich.de</a><span>Waldstr. 21, 64395 Brensbach</span></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Bäckerei Friedrich GmbH. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- ══════════ END FOOTER ══════════ -->
+
+  <script src="js/nav.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

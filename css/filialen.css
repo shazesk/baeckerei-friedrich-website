@@ -1,0 +1,14 @@
+/* ==========================================================================
+   FILIALEN PAGE
+   ========================================================================== */
+
+.filialen-intro {
+  padding: var(--sp-16) 0;
+  text-align: center;
+}
+.filialen-intro__text {
+  font-size: var(--text-md);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}

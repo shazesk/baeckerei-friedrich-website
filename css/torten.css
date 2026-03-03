@@ -1,0 +1,68 @@
+/* ==========================================================================
+   TORTEN PAGE
+   ========================================================================== */
+
+.torten-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+}
+@media (min-width: 640px)  { .torten-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .torten-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.torten-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  border: 1px solid var(--color-border);
+  transition: box-shadow var(--duration-base), transform var(--duration-base);
+}
+.torten-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.torten-card__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-out);
+}
+.torten-card:hover .torten-card__img {
+  transform: scale(1.04);
+}
+.torten-card__body {
+  padding: var(--sp-6);
+}
+.torten-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--clr-walnut);
+  margin-bottom: var(--sp-2);
+}
+.torten-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+.torten-cta {
+  text-align: center;
+  padding: var(--sp-10) var(--sp-6);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-xl);
+  margin-top: var(--sp-12);
+}
+.torten-cta__title {
+  font-family: var(--font-accent);
+  font-size: var(--text-2xl);
+  color: var(--color-accent);
+  margin-bottom: var(--sp-4);
+}
+.torten-cta__text {
+  color: var(--color-text-muted);
+  max-width: 500px;
+  margin: 0 auto var(--sp-6);
+}

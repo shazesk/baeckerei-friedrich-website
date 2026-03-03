@@ -1,0 +1,87 @@
+/* ==========================================================================
+   JOBS PAGE
+   ========================================================================== */
+
+.jobs-intro {
+  padding: var(--sp-16) 0;
+}
+.jobs-intro__text {
+  font-size: var(--text-md);
+  color: var(--color-text-muted);
+  max-width: 620px;
+}
+
+.job-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-8);
+  border: 1px solid var(--color-border);
+  transition: box-shadow var(--duration-base);
+}
+.job-card:hover { box-shadow: var(--shadow-md); }
+
+.job-card__type {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-accent);
+  background: var(--clr-linen);
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--sp-3);
+}
+
+.job-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--clr-walnut);
+  margin-bottom: var(--sp-3);
+}
+
+.job-card__meta {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--sp-4);
+}
+
+.job-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--sp-4);
+}
+
+.job-card__list {
+  list-style: disc;
+  padding-left: var(--sp-5);
+  margin-bottom: var(--sp-6);
+}
+.job-card__list li {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--sp-2);
+  line-height: var(--leading-normal);
+}
+
+.jobs-apply {
+  text-align: center;
+  padding: var(--sp-12) var(--sp-6);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-xl);
+  margin-top: var(--sp-12);
+}
+.jobs-apply__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--clr-walnut);
+  margin-bottom: var(--sp-4);
+}
+.jobs-apply__text {
+  color: var(--color-text-muted);
+  max-width: 500px;
+  margin: 0 auto var(--sp-6);
+}

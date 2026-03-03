@@ -1,0 +1,82 @@
+/* ==========================================================================
+   LEGAL PAGES — Impressum + Datenschutzerklärung
+   ========================================================================== */
+
+.legal-content {
+  padding: var(--sp-16) 0 var(--sp-24);
+}
+
+.legal-content__inner {
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+}
+
+.legal-content h2 {
+  font-size: var(--text-2xl);
+  margin-top: var(--sp-12);
+  margin-bottom: var(--sp-4);
+  padding-top: var(--sp-8);
+  border-top: 1px solid var(--color-border);
+}
+.legal-content h2:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.legal-content h3 {
+  font-size: var(--text-xl);
+  margin-top: var(--sp-8);
+  margin-bottom: var(--sp-3);
+}
+
+.legal-content h4 {
+  font-size: var(--text-lg);
+  margin-top: var(--sp-6);
+  margin-bottom: var(--sp-2);
+}
+
+.legal-content p {
+  color: var(--color-text-body);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--sp-4);
+  max-width: none;
+}
+
+.legal-content ul {
+  list-style: disc;
+  padding-left: var(--sp-6);
+  margin-bottom: var(--sp-4);
+}
+.legal-content ul li {
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+  margin-bottom: var(--sp-2);
+  line-height: var(--leading-relaxed);
+}
+
+.legal-content strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.legal-content a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-address {
+  font-style: normal;
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--sp-4);
+}
+
+.legal-highlight {
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-accent);
+  padding: var(--sp-5) var(--sp-6);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: var(--sp-6) 0;
+  font-size: var(--text-sm);
+}

@@ -1,0 +1,91 @@
+/* ==========================================================================
+   ÜBER UNS PAGE
+   ========================================================================== */
+
+.about-story {
+  padding: var(--sp-16) 0;
+}
+.about-story__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-10);
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .about-story__content { grid-template-columns: 1fr 1fr; }
+}
+
+.about-story__img {
+  border-radius: var(--radius-xl);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+}
+
+.about-story__text p {
+  margin-bottom: var(--sp-5);
+  line-height: var(--leading-relaxed);
+}
+
+/* Facts strip */
+.about-facts {
+  padding: var(--sp-12) 0;
+  background: var(--color-bg-alt);
+}
+.about-facts__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-6);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .about-facts__grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.fact-item__number {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: var(--sp-2);
+}
+.fact-item__label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* Philosophy */
+.about-philosophy {
+  padding: var(--sp-16) 0;
+}
+.about-philosophy__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+}
+@media (min-width: 768px) {
+  .about-philosophy__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.philosophy-card {
+  text-align: center;
+  padding: var(--sp-6);
+}
+.philosophy-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--sp-4);
+}
+.philosophy-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--clr-walnut);
+  margin-bottom: var(--sp-3);
+}
+.philosophy-card__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}

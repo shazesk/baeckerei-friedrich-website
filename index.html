@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bäckerei Friedrich — Familienunternehmen seit ca. 150 Jahren im Odenwald. Handgefertigte Brote, Torten und Eis Lisel Handeis aus eigener Herstellung.">
+  <title>Bäckerei Friedrich — Mit Liebe gebacken</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- ══════════ SHARED HEADER ══════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.svg" alt="Friedrich Bäckerei · Konditorei">
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Hauptnavigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link nav__link--active">Startseite</a></li>
+          <li><a href="produkte.html" class="nav__link">Produkte</a></li>
+          <li><a href="torten.html" class="nav__link">Torten</a></li>
+          <li><a href="eis-lisel.html" class="nav__link">Eis Lisel</a></li>
+          <li><a href="ueber-uns.html" class="nav__link">Über uns</a></li>
+          <li><a href="jobs.html" class="nav__link">Jobs</a></li>
+          <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+        </ul>
+        <a href="filialen.html" class="nav__cta">Filialen &amp; Öffnungszeiten</a>
+      </nav>
+    </div>
+  </header>
+  <!-- ══════════ END HEADER ══════════ -->
+
+  <main>
+
+    <!-- ── Hero ────────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__kicker">Mit Liebe gebacken</p>
+          <h1 class="hero__title">Bäckerei Friedrich</h1>
+          <p class="hero__text">Wir sind ein Familienunternehmen seit ca. 150 Jahren und legen seither Wert auf handgefertigte, traditionell hergestellte Produkte, die durch ihren natürlichen, frischen Geschmack begeistern.</p>
+          <div class="hero__actions">
+            <a href="produkte.html" class="btn btn--white btn--lg">Produkte entdecken</a>
+            <a href="filialen.html" class="btn btn--ghost btn--lg">Unsere Filialen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         PROMO / HIGHLIGHT SLOT — Easy to update!
+         Change: image src, kicker text, title, paragraph, link.
+         ══════════════════════════════════════════════════════════ -->
+    <section class="promo-slot section">
+      <div class="container">
+        <div class="feature-card reveal">
+          <div class="feature-card__img-wrap">
+            <!-- PROMO: Change this image -->
+            <img src="images/promo/promo-new.jpg" alt="Osteraktion" class="feature-card__img">
+          </div>
+          <div class="feature-card__body">
+            <!-- PROMO: Change kicker, title, text, link -->
+            <p class="feature-card__kicker">Saisonales Highlight</p>
+            <h2 class="feature-card__title">Frohe Ostern bei Friedrich!</h2>
+            <p class="feature-card__text">Entdecken Sie unsere handgefertigten Ostergebäcke — von Osterlammkuchen bis hin zu festlich verzierten Kreationen. Nur für kurze Zeit in allen Filialen erhältlich.</p>
+            <a href="produkte.html" class="btn btn--primary">Jetzt entdecken</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ══════════ END PROMO SLOT ══════════ -->
+
+    <!-- ── Category Entry Points ──────────────────────────────── -->
+    <section class="categories">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="section-header__kicker">Unser Sortiment</p>
+          <h2 class="section-header__title">Handwerk mit Tradition</h2>
+          <p class="section-header__desc">Zur Herstellung unserer Backwaren nutzen wir unser eigens angebautes Getreide. Purer Genuss &amp; eine Faszination, die im Handwerk ihresgleichen sucht.</p>
+        </div>
+        <div class="grid grid--3 reveal-stagger">
+          <a href="produkte.html" class="category-card reveal">
+            <img src="images/products/brot-1.jpg" alt="Brot &amp; Brötchen" class="category-card__img">
+            <div class="category-card__overlay"></div>
+            <div class="category-card__body">
+              <p class="category-card__kicker">Über 30 Sorten</p>
+              <h3 class="category-card__title">Brot &amp; Brötchen</h3>
+              <p class="category-card__desc">Herzhafter Sauerteig, handgeflochtene Brezeln und aromatische Vielfalt.</p>
+            </div>
+          </a>
+          <a href="torten.html" class="category-card reveal">
+            <img src="images/torten/hochzeit-1.jpg" alt="Torten &amp; Kuchen" class="category-card__img">
+            <div class="category-card__overlay"></div>
+            <div class="category-card__body">
+              <p class="category-card__kicker">Konditoreikunst</p>
+              <h3 class="category-card__title">Torten &amp; Kuchen</h3>
+              <p class="category-card__desc">Unwiderstehliche Köstlichkeiten nach alter Konditoreikunst.</p>
+            </div>
+          </a>
+          <a href="eis-lisel.html" class="category-card reveal">
+            <img src="images/home-eis.jpg" alt="Eis Lisel" class="category-card__img">
+            <div class="category-card__overlay"></div>
+            <div class="category-card__body">
+              <p class="category-card__kicker">Handgemachtes Eis</p>
+              <h3 class="category-card__title">Eis Lisel</h3>
+              <p class="category-card__desc">Handgemachtes Eis aus besten Zutaten — auch als Eis-Station für Ihr Event.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Branches Preview ───────────────────────────────────── -->
+    <section class="branches-preview">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="section-header__kicker">Immer in Ihrer Nähe</p>
+          <h2 class="section-header__title">6 Filialen im Odenwald</h2>
+          <p class="section-header__desc">Falls Sie Lust auf ein Brot aus herzhaftem Sauerteig oder ein süßes Kaffeestückchen bekommen haben — besuchen Sie uns!</p>
+        </div>
+        <div class="grid grid--3 reveal-stagger" style="gap: var(--sp-4);">
+          <div class="branch-mini reveal">
+            <h3 class="branch-mini__name">Brensbach</h3>
+            <p class="branch-mini__address">Am Alten Bahnhof 22-24</p>
+            <p class="branch-mini__hours">Mo–Fr 5:15–18:30 · Sa 5:30–17:00 · So 7:00–17:00</p>
+          </div>
+          <div class="branch-mini reveal">
+            <h3 class="branch-mini__name">Reichelsheim</h3>
+            <p class="branch-mini__address">Heidelberger Str. 10</p>
+            <p class="branch-mini__hours">Mo–Fr 6:00–18:15 · Sa 6:00–13:00 · So 7:30–11:00</p>
+          </div>
+          <div class="branch-mini reveal">
+            <h3 class="branch-mini__name">Habitzheim</h3>
+            <p class="branch-mini__address">Langgasse 1</p>
+            <p class="branch-mini__hours">Mo–Do 5:30–18:00 · Fr 5:30–18:00 · Sa 5:30–12:30</p>
+          </div>
+          <div class="branch-mini reveal">
+            <h3 class="branch-mini__name">Fränkisch-Crumbach</h3>
+            <p class="branch-mini__address">Darmstädter Str. 7</p>
+            <p class="branch-mini__hours">Mo–Sa ab 6:00/6:30</p>
+          </div>
+          <div class="branch-mini reveal">
+            <h3 class="branch-mini__name">Beerfurth</h3>
+            <p class="branch-mini__address">Brückenstr. 8</p>
+            <p class="branch-mini__hours">Mo–Fr 6:00–10:00 · Sa 6:00–11:00</p>
+          </div>
+          <div class="branch-mini reveal">
+            <h3 class="branch-mini__name">Wersau</h3>
+            <p class="branch-mini__address">Backhausstr. 2</p>
+            <p class="branch-mini__hours">Mo–Fr 6:00–11:00 · Sa 5:00–11:00</p>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: var(--sp-10);">
+          <a href="filialen.html" class="btn btn--outline">Alle Filialen &amp; Öffnungszeiten</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Team Teaser ────────────────────────────────────────── -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="feature-card reveal" style="background: transparent; box-shadow: none;">
+          <div class="feature-card__img-wrap">
+            <img src="images/team/team-bakery.jpg" alt="Friedrich Team" class="feature-card__img" style="border-radius: var(--radius-xl);">
+          </div>
+          <div class="feature-card__body">
+            <p class="feature-card__kicker" style="color: var(--clr-wheat);">Werde Teil unseres Teams</p>
+            <h2 class="feature-card__title" style="color: var(--clr-cream);">Wir suchen Dich!</h2>
+            <p class="feature-card__text" style="color: var(--clr-sand);">Du bist auf der Suche nach einem langfristigen und sicheren Arbeitsplatz in einem tollen Unternehmen? Ob Schüler, gelernter Verkäufer oder Bäckermeister — zusammen finden wir deinen Platz in unserem Team.</p>
+            <a href="jobs.html" class="btn btn--white">Offene Stellen ansehen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ SHARED FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="images/logo.svg" alt="Friedrich Bäckerei · Konditorei">
+          <p>Familienunternehmen seit ca. 150 Jahren im Odenwald. Handgefertigte, traditionell hergestellte Produkte aus eigener Herstellung.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Seiten</h3>
+          <div class="footer__links">
+            <a href="produkte.html">Produkte</a>
+            <a href="torten.html">Torten</a>
+            <a href="eis-lisel.html">Eis Lisel</a>
+            <a href="ueber-uns.html">Über uns</a>
+            <a href="jobs.html">Jobs</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Besuchen</h3>
+          <div class="footer__links">
+            <a href="filialen.html">Filialen &amp; Öffnungszeiten</a>
+            <a href="kontakt.html">Kontakt</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Kontakt</h3>
+          <div class="footer__links">
+            <a href="tel:+496161912106">06161 / 912106</a>
+            <a href="mailto:mail@baeckereifriedrich.de">mail@baeckereifriedrich.de</a>
+            <span>Waldstr. 21, 64395 Brensbach</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Bäckerei Friedrich GmbH. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutzerklärung</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ══════════ END FOOTER ══════════ -->
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

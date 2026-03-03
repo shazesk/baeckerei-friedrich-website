@@ -1,0 +1,121 @@
+/* ==========================================================================
+   DESIGN SYSTEM — Bäckerei Friedrich Premium Rebrand
+   ==========================================================================
+   Color Palette  · Typography  · Spacing  · Shadows  · Borders
+   ========================================================================== */
+
+:root {
+  /* ── Friedrich Brand Colors ─────────────────────────────────── */
+  --clr-espresso:     #2C1810;   /* Deepest brown — primary text          */
+  --clr-walnut:       #4A3228;   /* Rich warm brown — headings            */
+  --clr-cocoa:        #6B4C3B;   /* Medium brown — body text              */
+  --clr-caramel:      #A67C52;   /* Warm caramel — links, accents         */
+  --clr-wheat:        #C8A97E;   /* Wheat tone — subtle accents           */
+  --clr-sand:         #D4B896;   /* Sand — borders, dividers              */
+  --clr-linen:        #F5EDE0;   /* Warm linen — alt backgrounds          */
+  --clr-cream:        #FAF6F0;   /* Warm cream — main background          */
+  --clr-parchment:    #FDFBF7;   /* Near-white — card surfaces            */
+  --clr-white:        #FFFFFF;
+
+  /* ── Semantic Tokens ────────────────────────────────────────── */
+  --color-text:         var(--clr-espresso);
+  --color-text-body:    var(--clr-cocoa);
+  --color-text-muted:   #8B7355;
+  --color-text-inverse: var(--clr-cream);
+  --color-accent:       var(--clr-caramel);
+  --color-accent-hover: #8B5E3C;
+  --color-bg:           var(--clr-cream);
+  --color-bg-alt:       var(--clr-linen);
+  --color-surface:      var(--clr-parchment);
+  --color-border:       rgba(168, 139, 107, 0.2);
+  --color-border-strong: var(--clr-sand);
+
+  /* ── Eis Lisel Sub-Brand ────────────────────────────────────── */
+  --eis-rose:         #C4547A;   /* Muted berry/rose — primary accent     */
+  --eis-rose-light:   #E8A0B8;   /* Soft rose                             */
+  --eis-mint:         #6AAFA0;   /* Cool mint — secondary accent          */
+  --eis-mint-light:   #B5DDD5;   /* Pastel mint                           */
+  --eis-blush:        #FDF2F5;   /* Blush background                      */
+  --eis-cream:        #FFF9FA;   /* Near-white rose                       */
+
+  /* ── Typography ─────────────────────────────────────────────── */
+  /* Loaded from Google Fonts: Cormorant Garamond + Inter          */
+  --font-display:  'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+  --font-body:     'Inter', -apple-system, 'Segoe UI', sans-serif;
+  --font-accent:   'Inkfree', 'Caveat', cursive;
+
+  /* Type Scale (1.250 ratio — Major Third) */
+  --text-xs:    0.75rem;    /* 12px */
+  --text-sm:    0.875rem;   /* 14px */
+  --text-base:  1rem;       /* 16px */
+  --text-md:    1.125rem;   /* 18px */
+  --text-lg:    1.25rem;    /* 20px */
+  --text-xl:    1.5rem;     /* 24px */
+  --text-2xl:   1.875rem;   /* 30px */
+  --text-3xl:   2.25rem;    /* 36px */
+  --text-4xl:   3rem;       /* 48px */
+  --text-5xl:   3.75rem;    /* 60px */
+  --text-6xl:   4.5rem;     /* 72px */
+
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.65;
+  --leading-relaxed: 1.8;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.04em;
+  --tracking-wider:   0.08em;
+  --tracking-caps:    0.12em;
+
+  /* ── Spacing (8px base) ─────────────────────────────────────── */
+  --sp-1:   0.25rem;   /*  4px */
+  --sp-2:   0.5rem;    /*  8px */
+  --sp-3:   0.75rem;   /* 12px */
+  --sp-4:   1rem;      /* 16px */
+  --sp-5:   1.25rem;   /* 20px */
+  --sp-6:   1.5rem;    /* 24px */
+  --sp-8:   2rem;      /* 32px */
+  --sp-10:  2.5rem;    /* 40px */
+  --sp-12:  3rem;      /* 48px */
+  --sp-16:  4rem;      /* 64px */
+  --sp-20:  5rem;      /* 80px */
+  --sp-24:  6rem;      /* 96px */
+  --sp-32:  8rem;      /* 128px */
+
+  /* ── Layout ─────────────────────────────────────────────────── */
+  --max-width:       1200px;
+  --max-width-narrow: 800px;
+  --max-width-wide:  1400px;
+  --header-height:    72px;
+
+  /* ── Shadows ────────────────────────────────────────────────── */
+  --shadow-xs:  0 1px 2px rgba(44, 24, 16, 0.04);
+  --shadow-sm:  0 2px 4px rgba(44, 24, 16, 0.06);
+  --shadow-md:  0 4px 12px rgba(44, 24, 16, 0.08);
+  --shadow-lg:  0 8px 24px rgba(44, 24, 16, 0.10);
+  --shadow-xl:  0 16px 48px rgba(44, 24, 16, 0.12);
+
+  /* ── Borders ────────────────────────────────────────────────── */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   20px;
+  --radius-2xl:  28px;
+  --radius-full: 9999px;
+
+  /* ── Transitions ────────────────────────────────────────────── */
+  --ease-out:  cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --duration-fast:  150ms;
+  --duration-base:  300ms;
+  --duration-slow:  500ms;
+}
+
+/* ── Eis Lisel page-level palette override ─────────────────────── */
+.eis-lisel-page {
+  --color-accent:       var(--eis-rose);
+  --color-accent-hover: #A33D60;
+  --color-bg:           var(--eis-cream);
+  --color-bg-alt:       var(--eis-blush);
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Über uns — Bäckerei Friedrich, Familienunternehmen seit ca. 150 Jahren im Odenwald. Gegründet von Wilhelm Steinmetz, heute geführt von Reiner Friedrich und Familie.">
+  <title>Über uns — Bäckerei Friedrich</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/produkte.css">
+  <link rel="stylesheet" href="css/ueber-uns.css">
+</head>
+<body>
+
+  <!-- ══════════ SHARED HEADER ══════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo.svg" alt="Friedrich Bäckerei · Konditorei"></a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></button>
+      <nav class="nav" id="nav" aria-label="Hauptnavigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Startseite</a></li>
+          <li><a href="produkte.html" class="nav__link">Produkte</a></li>
+          <li><a href="torten.html" class="nav__link">Torten</a></li>
+          <li><a href="eis-lisel.html" class="nav__link">Eis Lisel</a></li>
+          <li><a href="ueber-uns.html" class="nav__link nav__link--active">Über uns</a></li>
+          <li><a href="jobs.html" class="nav__link">Jobs</a></li>
+          <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+        </ul>
+        <a href="filialen.html" class="nav__cta">Filialen &amp; Öffnungszeiten</a>
+      </nav>
+    </div>
+  </header>
+  <!-- ══════════ END HEADER ══════════ -->
+
+  <main>
+
+    <section class="page-hero">
+      <div class="page-hero__bg" style="background-image:url('images/hero/ueber-uns-hero.jpg')"></div>
+      <div class="container">
+        <p class="page-hero__kicker">Unsere Geschichte</p>
+        <h1 class="page-hero__title">Über uns</h1>
+        <p class="page-hero__desc">Ein Familienunternehmen seit ca. 150 Jahren — vom Odenwald für den Odenwald.</p>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="about-story">
+      <div class="container">
+        <div class="about-story__content reveal">
+          <img src="images/team/team-history.jpg" alt="Das Friedrich Team" class="about-story__img">
+          <div class="about-story__text">
+            <p class="section-header__kicker" style="margin-bottom: var(--sp-4);">Familiäres Traditionsunternehmen</p>
+            <h2 style="margin-bottom: var(--sp-6);">Seit ca. 150 Jahren mit Liebe gebacken</h2>
+            <p>Wilhelm Steinmetz gründete die Bäckerei Ende des 19. Jahrhunderts in Brensbach im Odenwald. Seitdem ist der Betrieb fest in der Region verwurzelt und in Familienhand geblieben.</p>
+            <p>1992 übernahm Reiner Friedrich die Betriebsführung und erweiterte das Unternehmen. 2008 wurde die Filiale in Reichelsheim neu eröffnet. 2017 stiegen Friedrichs Tochter Lisa und ihr Mann in das Unternehmen ein — und sichern so die Fortsetzung der Familientradition.</p>
+            <p>Vielen Dank für Ihr Interesse an unseren Backwaren und Produkten. Wir sind ein Familienunternehmen seit ca. 150 Jahren und legen seither Wert auf handgefertigte, traditionell hergestellte Produkte, die durch ihren natürlichen, frischen Geschmack begeistern.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facts -->
+    <section class="about-facts">
+      <div class="container">
+        <div class="about-facts__grid reveal-stagger">
+          <div class="fact-item reveal">
+            <div class="fact-item__number">~150</div>
+            <div class="fact-item__label">Jahre Familientradition</div>
+          </div>
+          <div class="fact-item reveal">
+            <div class="fact-item__number">30+</div>
+            <div class="fact-item__label">Brotsorten täglich</div>
+          </div>
+          <div class="fact-item reveal">
+            <div class="fact-item__number">6</div>
+            <div class="fact-item__label">Filialen im Odenwald</div>
+          </div>
+          <div class="fact-item reveal">
+            <div class="fact-item__number">~35</div>
+            <div class="fact-item__label">Mitarbeiter im Team</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="about-philosophy">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="section-header__kicker">Unser Handwerk</p>
+          <h2 class="section-header__title">Was uns ausmacht</h2>
+        </div>
+        <div class="about-philosophy__grid reveal-stagger">
+          <div class="philosophy-card reveal">
+            <div class="philosophy-card__icon">🌾</div>
+            <h3 class="philosophy-card__title">Eigenes Getreide</h3>
+            <p class="philosophy-card__text">Zur Herstellung unserer Backwaren nutzen wir unser eigens angebautes Getreide. Gemeinsam mit regionalen Mühlen verarbeiten wir es zu feinstem Mehl.</p>
+          </div>
+          <div class="philosophy-card reveal">
+            <div class="philosophy-card__icon">🍞</div>
+            <h3 class="philosophy-card__title">3-Stufen-Sauerteig</h3>
+            <p class="philosophy-card__text">Unsere Brote werden mit einem aufwendigen 3-Stufen-Sauerteig hergestellt. Diese traditionelle Methode sorgt für unvergleichlichen Geschmack und lange Frische.</p>
+          </div>
+          <div class="philosophy-card reveal">
+            <div class="philosophy-card__icon">🥨</div>
+            <h3 class="philosophy-card__title">Handarbeit</h3>
+            <p class="philosophy-card__text">Jede einzelne Brezel wird von Hand geflochten. Wir verbinden traditionelle Handwerkstechniken mit modernen Verfahren — für Qualität, die man schmeckt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second story block -->
+    <section class="about-story section--alt" style="padding: var(--sp-16) 0;">
+      <div class="container">
+        <div class="about-story__content reveal" style="direction: rtl;">
+          <div class="about-story__text" style="direction: ltr;">
+            <p class="section-header__kicker" style="margin-bottom: var(--sp-4);">Ausbildungsbetrieb</p>
+            <h2 style="margin-bottom: var(--sp-6);">Seit über 30 Jahren Ausbildungsbetrieb</h2>
+            <p>Seit mehr als 30 Jahren bilden wir in unserer Bäckerei den Nachwuchs aus. Als Ausbildungsbetrieb geben wir unser Wissen und unsere Leidenschaft für das Bäckerhandwerk an die nächste Generation weiter.</p>
+            <p>Die zentrale Produktionsstätte in Brensbach beliefert alle Filialen täglich mehrfach mit frischen Produkten. So stellen wir sicher, dass Sie in jeder unserer Filialen die gleiche Qualität und Frische erleben.</p>
+            <a href="jobs.html" class="btn btn--outline" style="margin-top: var(--sp-4);">Offene Stellen ansehen</a>
+          </div>
+          <img src="images/team/verkaeuferinnen.jpg" alt="Friedrich Verkäuferinnen" class="about-story__img">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ SHARED FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="images/logo.svg" alt="Friedrich Bäckerei · Konditorei">
+          <p>Familienunternehmen seit ca. 150 Jahren im Odenwald. Handgefertigte, traditionell hergestellte Produkte aus eigener Herstellung.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Seiten</h3>
+          <div class="footer__links"><a href="produkte.html">Produkte</a><a href="torten.html">Torten</a><a href="eis-lisel.html">Eis Lisel</a><a href="ueber-uns.html">Über uns</a><a href="jobs.html">Jobs</a></div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Besuchen</h3>
+          <div class="footer__links"><a href="filialen.html">Filialen &amp; Öffnungszeiten</a><a href="kontakt.html">Kontakt</a></div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Kontakt</h3>
+          <div class="footer__links"><a href="tel:+496161912106">06161 / 912106</a><a href="mailto:mail@baeckereifriedrich.de">mail@baeckereifriedrich.de</a><span>Waldstr. 21, 64395 Brensbach</span></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Bäckerei Friedrich GmbH. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- ══════════ END FOOTER ══════════ -->
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
