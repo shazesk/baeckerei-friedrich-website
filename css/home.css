@@ -11,13 +11,22 @@
   color: var(--clr-cream);
   overflow: hidden;
 }
-.hero__bg {
+/* Slider container */
+.hero__slider {
   position: absolute; inset: 0; z-index: 0;
-  background: url('../images/hero/home-hero.jpg') center/cover no-repeat;
 }
-.hero__bg::after {
-  content: '';
+.hero__slide {
   position: absolute; inset: 0;
+  background: center/cover no-repeat;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+.hero__slide--active {
+  opacity: 1;
+}
+/* Gradient overlay (above slides, below content) */
+.hero__overlay {
+  position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(
     160deg,
     rgba(44, 24, 16, 0.82) 0%,
@@ -123,6 +132,39 @@
   font-size: var(--text-sm);
   color: rgba(250,246,240,0.8);
   max-width: 280px;
+}
+
+/* ── Welcome Cards ───────────────────────────────────────────── */
+.welcome-card {
+  text-align: center;
+  padding: var(--sp-8);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-xs);
+  transition: box-shadow var(--duration-base), transform var(--duration-base);
+}
+.welcome-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+.welcome-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--clr-walnut);
+  margin-bottom: var(--sp-3);
+}
+.welcome-card__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--sp-4);
+}
+.welcome-card__link {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
 }
 
 /* ── Branches Preview ─────────────────────────────────────────── */

@@ -228,10 +228,20 @@
 .branch-card {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  padding: var(--sp-6) var(--sp-6) var(--sp-5);
+  overflow: hidden;
   box-shadow: var(--shadow-xs);
   border: 1px solid var(--color-border);
-  transition: box-shadow var(--duration-base), border-color var(--duration-base);
+  transition: box-shadow var(--duration-base), border-color var(--duration-base), transform var(--duration-base);
+}
+.branch-card__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease-out);
+}
+.branch-card:hover .branch-card__img {
+  transform: scale(1.04);
 }
 .branch-card:hover {
   box-shadow: var(--shadow-md);
@@ -244,6 +254,7 @@
   font-weight: 700;
   color: var(--clr-walnut);
   margin-bottom: var(--sp-3);
+  padding: var(--sp-6) var(--sp-6) 0;
 }
 
 .branch-card__address {
@@ -251,19 +262,22 @@
   color: var(--color-text-muted);
   line-height: var(--leading-relaxed);
   margin-bottom: var(--sp-2);
+  padding: 0 var(--sp-6);
 }
 
 .branch-card__phone {
   font-size: var(--text-sm);
   font-weight: 600;
   margin-bottom: var(--sp-4);
+  padding: 0 var(--sp-6);
 }
 
 .branch-card__hours {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
   border-top: 1px solid var(--color-border);
-  padding-top: var(--sp-4);
+  padding: var(--sp-4) var(--sp-6) 0;
+  margin: 0 var(--sp-0);
 }
 .branch-card__hours dt {
   font-weight: 600;
@@ -279,7 +293,7 @@
   display: inline-flex;
   align-items: center;
   gap: var(--sp-1);
-  margin-top: var(--sp-4);
+  margin: var(--sp-4) var(--sp-6) var(--sp-6);
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--color-accent);
