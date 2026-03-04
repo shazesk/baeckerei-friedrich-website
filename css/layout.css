@@ -362,3 +362,132 @@ main { padding-top: var(--header-height); }
     justify-content: space-between;
   }
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   TOPBAR — Desktop contact info
+   ══════════════════════════════════════════════════════════════════ */
+.topbar {
+  display: none;
+  background: var(--clr-espresso);
+  color: var(--clr-sand);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+}
+@media (min-width: 1024px) {
+  .topbar {
+    display: block;
+  }
+}
+.topbar__inner {
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
+  padding: var(--sp-2) var(--sp-6);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--sp-6);
+}
+.topbar a {
+  color: var(--clr-wheat);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  transition: color var(--duration-fast);
+}
+.topbar a:hover {
+  color: var(--clr-cream);
+}
+.topbar__icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+/* Push header down below topbar on desktop */
+@media (min-width: 1024px) {
+  .topbar + .header {
+    top: 0;
+  }
+  .topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1001;
+  }
+  .topbar + .header {
+    top: 34px;
+  }
+  .topbar ~ main {
+    padding-top: calc(var(--header-height) + 34px);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   MOBILE STICKY BOTTOM BAR
+   ══════════════════════════════════════════════════════════════════ */
+.mobile-bar {
+  display: flex;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: var(--clr-espresso);
+  padding: var(--sp-3) var(--sp-4);
+  padding-bottom: calc(var(--sp-3) + env(safe-area-inset-bottom, 0px));
+  gap: var(--sp-3);
+  align-items: center;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.15);
+}
+
+.mobile-bar__cta {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  background: var(--color-accent);
+  color: var(--clr-parchment);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--radius-full);
+  text-align: center;
+  transition: background-color var(--duration-fast);
+}
+.mobile-bar__cta:hover {
+  background: var(--color-accent-hover);
+  color: var(--clr-parchment);
+}
+
+.mobile-bar__icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: var(--clr-wheat);
+  flex-shrink: 0;
+  transition: background-color var(--duration-fast);
+}
+.mobile-bar__icon-btn:hover {
+  background: rgba(255,255,255,0.2);
+  color: var(--clr-cream);
+}
+.mobile-bar__icon-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Add bottom padding to footer on mobile so sticky bar doesn't overlap */
+@media (max-width: 1023px) {
+  .footer {
+    padding-bottom: calc(var(--sp-8) + 70px);
+  }
+}
+
+/* Hide mobile bar on desktop */
+@media (min-width: 1024px) {
+  .mobile-bar {
+    display: none;
+  }
+}
